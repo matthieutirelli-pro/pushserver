@@ -7,6 +7,7 @@ from sqlalchemy.orm.exc import NoResultFound
 
 import configs
 from orm import db, User
+import os
 
 API_VERSION = "0.1.0"
 
@@ -40,4 +41,4 @@ if __name__ == "__main__":
             db.session.add(user)
             db.session.commit()
 
-    app.run(port=CONFIG.APP_PORT, debug=CONFIG.DEBUG)
+    app.run(port=os.environ['PORT'], debug=CONFIG.DEBUG)
