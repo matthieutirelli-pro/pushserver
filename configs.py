@@ -1,7 +1,7 @@
 class Config:
     DEBUG = False
     TESTING = False
-    APP_PORT = 80
+    APP_PORT = 8080
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     USER = None
     PASS = None
